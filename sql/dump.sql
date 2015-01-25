@@ -1,22 +1,55 @@
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
-CREATE TABLE categoria (
-	id INTEGER NOT NULL, 
-	nome VARCHAR, 
-	PRIMARY KEY (id)
+CREATE TABLE acquisto
+(
+    id INTEGER NOT NULL,
+    data TEXT NOT NULL,
+    fornitore_id INTEGER NOT NULL,
+    FOREIGN KEY (fornitore_id) REFERENCES fornitore (id)
 );
-CREATE TABLE fornitore (
-	id INTEGER NOT NULL, 
-	nome VARCHAR NOT NULL, 
-	PRIMARY KEY (id)
+CREATE TABLE acquistoDettaglio
+(
+    id INTEGER PRIMARY KEY NOT NULL,
+    acquisto_id INTEGER NOT NULL,
+    qta INTEGER NOT NULL,
+    prezzo INTEGER NOT NULL,
+    iva_id INTEGER NOT NULL,
+    FOREIGN KEY ( acquisto_id ) REFERENCES acquisto (id),
+    FOREIGN KEY ( iva_id ) REFERENCES iva (id)
 );
-CREATE TABLE prodotto (
-	id INTEGER NOT NULL, 
-	barcode VARCHAR NOT NULL, 
-	descrizione VARCHAR NOT NULL, 
-	categoria VARCHAR, 
-	PRIMARY KEY (id), 
-	FOREIGN KEY(categoria) REFERENCES categoria (id)
+CREATE TABLE categoria
+(
+    id INTEGER NOT NULL,
+    nome TEXT,
+    PRIMARY KEY (id)
+);
+CREATE TABLE fornitore
+(
+    id INTEGER NOT NULL,
+    nome TEXT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE iva
+(
+    id INTEGER NOT NULL,
+    valore INTEGER NOT NULL,
+    descrizione TEXT NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO "iva" VALUES(1,'4','ALIQUOTA 4%')
+INSERT INTO "iva" VALUES(2,'10','ALIQUOTA 10%')
+INSERT INTO "iva" VALUES(3,'20','ALIQUOTA 20%')
+INSERT INTO "iva" VALUES(4,'22','ALIQUOTA 22%')
+INSERT INTO "iva" VALUES(5,'FC','FUORI CAMPO IVA')
+CREATE TABLE prodotto
+(
+    id INTEGER NOT NULL,
+    barcode TEXT NOT NULL,
+    descrizione TEXT NOT NULL,
+    categoria TEXT,
+    PRIMARY KEY (id),
+    FOREIGN KEY ( categoria ) REFERENCES categoria ( id ) DEFERRABLE INITIALLY DEFERRED
 );
 INSERT INTO "prodotto" VALUES(1,'7622210088697 ','Halls Xs Peppermint 17g',NULL);
 INSERT INTO "prodotto" VALUES(2,'7622210088727 ','Halls Xs Lemon 17g',NULL);
@@ -300,15 +333,5 @@ INSERT INTO "prodotto" VALUES(279,'08000500039106','Kinder Sorpresa 72pz X 20 Gr
 INSERT INTO "prodotto" VALUES(280,'8026048000040','Solvay Bicarbonato Di Sodio Purissimo 500grammi',NULL);
 INSERT INTO "prodotto" VALUES(281,'8000040040815','Campari Soda 5pzx 9.8cl',NULL);
 INSERT INTO "prodotto" VALUES(282,'SR9D','Soffia E Sai',NULL);
-CREATE TABLE acquisto (
-	id INTEGER NOT NULL, 
-	prodotto_id INTEGER NOT NULL, 
-	fornitore_id INTEGER NOT NULL, 
-	data DATE NOT NULL, 
-	qta INTEGER NOT NULL, 
-	prezzo INTEGER, 
-	PRIMARY KEY (id, prodotto_id, fornitore_id), 
-	FOREIGN KEY(prodotto_id) REFERENCES prodotto (id), 
-	FOREIGN KEY(fornitore_id) REFERENCES fornitore (id)
-);
+
 COMMIT;

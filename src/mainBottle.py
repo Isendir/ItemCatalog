@@ -26,6 +26,7 @@ def set_sqlite_pragma(dbapi_connection, connection_record):
     :param dbapi_connection:
     :param connection_record:
     '''
+    #TODO: aggiungere link a documentazione di riferimento SQLAlchemy - SQLite db dialect
     cursor = dbapi_connection.cursor()
     cursor.execute("PRAGMA foreign_keys=ON")
     cursor.close()

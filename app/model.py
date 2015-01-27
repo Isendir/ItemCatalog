@@ -1,13 +1,16 @@
 from peewee import *
 
-database = SqliteDatabase('sampleData/test.db', **{})
+database = SqliteDatabase('../sampleData/test.db', **{})
+
 
 class UnknownField(object):
     pass
 
+
 class BaseModel(Model):
     class Meta:
         database = database
+
 
 class Fornitore(BaseModel):
     nome = TextField()
@@ -15,12 +18,14 @@ class Fornitore(BaseModel):
     class Meta:
         db_table = 'fornitore'
 
+
 class Acquisto(BaseModel):
-    data = TextField()
+    data = DateField()
     fornitore = ForeignKeyField(db_column='fornitore_id', rel_model=Fornitore, to_field='id')
 
     class Meta:
         db_table = 'acquisto'
+
 
 class Iva(BaseModel):
     descrizione = TextField()
@@ -28,6 +33,7 @@ class Iva(BaseModel):
 
     class Meta:
         db_table = 'iva'
+
 
 class Acquistodettaglio(BaseModel):
     acquisto = ForeignKeyField(db_column='acquisto_id', rel_model=Acquisto, to_field='id')
@@ -39,12 +45,12 @@ class Acquistodettaglio(BaseModel):
         db_table = 'acquistoDettaglio'
 
 
-
 class Categoria(BaseModel):
     nome = TextField(null=True)
 
     class Meta:
         db_table = 'categoria'
+
 
 class Prodotto(BaseModel):
     barcode = TextField()
@@ -53,4 +59,3 @@ class Prodotto(BaseModel):
 
     class Meta:
         db_table = 'prodotto'
-

@@ -2,14 +2,14 @@ PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE acquisto
 (
-    id INTEGER NOT NULL,
+    id INTEGER PRIMARY KEY,
     data TEXT NOT NULL,
     fornitore_id INTEGER NOT NULL,
     FOREIGN KEY (fornitore_id) REFERENCES fornitore (id)
 );
 CREATE TABLE acquistoDettaglio
 (
-    id INTEGER PRIMARY KEY NOT NULL,
+    id INTEGER PRIMARY KEY,
     acquisto_id INTEGER NOT NULL,
     qta INTEGER NOT NULL,
     prezzo INTEGER NOT NULL,

@@ -7,7 +7,7 @@ from app import db
 
 class Acquisto(db.Model):
     __tablename = 'acquisto'
-    id = db.Column(db.Integer, nullable=False),
+    id = db.Column(db.Integer, primary_key=True),
     data = db.Column(db.Date, nullable=False),
     fornitore_id = db.Column(db.ForeignKey('fornitore.id'), nullable=False)
 

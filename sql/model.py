@@ -1,8 +1,5 @@
 # coding: utf-8
-
-__author__ = 'acherubini'
-
-from sqlalchemy import Column, ForeignKey, Integer, Table, Text, Date
+from sqlalchemy import Column, ForeignKey, Integer, Text
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -11,12 +8,14 @@ Base = declarative_base()
 metadata = Base.metadata
 
 
-t_acquisto = Table(
-    'acquisto', metadata,
-    Column('id', Integer, nullable=False),
-    Column('data', Date, nullable=False),
-    Column('fornitore_id', ForeignKey('fornitore.id'), nullable=False)
-)
+class Acquisto(Base):
+    __tablename__ = 'acquisto'
+
+    id = Column(Integer, primary_key=True)
+    data = Column(Text, nullable=False)
+    fornitore_id = Column(ForeignKey('fornitore.id'), nullable=False)
+
+    fornitore = relationship('Fornitore')
 
 
 class AcquistoDettaglio(Base):

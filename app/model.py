@@ -1,4 +1,5 @@
 # coding: utf-8
+# Nota: Utilizzato sqlacodegen 
 
 __author__ = 'acherubini'
 

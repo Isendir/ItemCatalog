@@ -1,13 +1,13 @@
 CREATE TABLE acquisto
 (
-    id INTEGER NOT NULL,
+    id INTEGER PRIMARY KEY,
     data TEXT NOT NULL,
     fornitore_id INTEGER NOT NULL,
     FOREIGN KEY (fornitore_id) REFERENCES fornitore (id)
 );
 CREATE TABLE acquistoDettaglio
 (
-    id INTEGER PRIMARY KEY NOT NULL,
+    id INTEGER PRIMARY KEY,
     acquisto_id INTEGER NOT NULL,
     qta INTEGER NOT NULL,
     prezzo INTEGER NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE fornitore
 );
 CREATE TABLE iva
 (
-    id INTEGER PRIMARY KEY NOT NULL,
+    id INTEGER NOT NULL,
     valore INTEGER NOT NULL,
     descrizione TEXT NOT NULL,
     PRIMARY KEY (id)

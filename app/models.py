@@ -5,7 +5,7 @@ __author__ = 'acherubini'
 from app import db
 
 
-class Acquisto(Base):
+class Acquisto(db.Model):
     __tablename__ = 'acquisto'
 
     id = db.Column(db.Integer, primary_key=True)

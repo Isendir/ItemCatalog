@@ -10,7 +10,7 @@ class Acquisto(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     data = db.Column(db.Text, nullable=False)
-    fornitore_id = db.Column(ForeignKey('fornitore.id'), nullable=False)
+    fornitore_id = db.Column(db.ForeignKey('fornitore.id'), nullable=False)
 
     fornitore = db.relationship('Fornitore')
 

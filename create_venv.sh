@@ -7,6 +7,7 @@ which python
 python --version
 python get-pip.py 
 pip -V
+rm get-pip.py
 pip install Flask
 pip install sqlalchemy
 pip install Flask-Script Flask-SQLAlchemy

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3643e697-5f06-4cba-85a2-4d518dad149e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/model.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/amount.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.db" afterPath="$PROJECT_DIR$/app.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/app/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_venv.sh" afterPath="$PROJECT_DIR$/create_venv.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/dump.sql" afterPath="$PROJECT_DIR$/sql/dump.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RegistroAcquisti.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,13 +38,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <file leaf-file-name="fields.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask/lib/python3.4/site-packages/wtforms/ext/sqlalchemy/fields.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3402">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orm.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask/lib/python3.4/site-packages/wtforms/ext/sqlalchemy/orm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5454">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,16 +59,58 @@
       <file leaf-file-name="model.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="1242">
+            <state line="21" column="38" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models.py">
+      <file leaf-file-name="iva.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/iva.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.4682081" vertical-offset="0" max-vertical-offset="1170">
+            <state line="4" column="51" selection-start="245" selection-end="245" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="180">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prodotti.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/prodotti.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="282" column="0" selection-start="24484" selection-end="24484" vertical-scroll-proportion="-16.0" vertical-offset="4644" max-vertical-offset="5184">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask/lib/python3.4/site-packages/wtforms/ext/sqlalchemy/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="56" selection-start="154" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_venv.sh" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/create_venv.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="194" selection-end="194" vertical-scroll-proportion="0.48214287" vertical-offset="0" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
@@ -83,7 +136,6 @@
       <list>
         <option value="db-console:/2fa819e9/c72ea13a-63ac-4181-afda-8d9020684f34/" />
         <option value="$PROJECT_DIR$/sql/schema.sql" />
-        <option value="$PROJECT_DIR$/sql/dump.sql" />
         <option value="$PROJECT_DIR$/src/model.py" />
         <option value="$PROJECT_DIR$/sql/iva.sql" />
         <option value="$PROJECT_DIR$/sql/prodotti.sql" />
@@ -91,7 +143,6 @@
         <option value="$PROJECT_DIR$/app/run.py" />
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/flask/pyvenv.cfg" />
-        <option value="$PROJECT_DIR$/app/forms.py" />
         <option value="$PROJECT_DIR$/app/templates/index.html" />
         <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/views.py" />
@@ -107,8 +158,14 @@
         <option value="$PROJECT_DIR$/db_migrate.py" />
         <option value="$PROJECT_DIR$/sql/model.py" />
         <option value="$PROJECT_DIR$/app/model.py" />
-        <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
+        <option value="$PROJECT_DIR$/app/amount.py" />
+        <option value="$PROJECT_DIR$/app/forms.py" />
+        <option value="$PROJECT_DIR$/flask/lib/python3.4/site-packages/wtforms/ext/sqlalchemy/orm.py" />
+        <option value="$PROJECT_DIR$/flask/lib/python3.4/site-packages/wtforms/ext/sqlalchemy/__init__.py" />
+        <option value="$PROJECT_DIR$/sql/dump.sql" />
+        <option value="$PROJECT_DIR$/create_venv.sh" />
       </list>
     </option>
   </component>
@@ -160,6 +217,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,7 +230,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 3.4.0 (/usr/bin/python3) &gt;" />
+              <option name="myItemId" value="&lt; Python 3.4.2 virtualenv at ~/PycharmProjects/RegistroAcquisti/flask &gt;" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -196,41 +254,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RegistroAcquisti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RegistroAcquisti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RegistroAcquisti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RegistroAcquisti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -587,7 +616,27 @@
       <created>1422484864386</created>
       <updated>1422484864386</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Corretta definizione tabella Acquisto">
+      <created>1422512888816</created>
+      <updated>1422512888816</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Corretta definizione tabella Acquisto">
+      <created>1422513018518</created>
+      <updated>1422513018518</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Corretta definizione tabella Acquisto">
+      <created>1422513095049</created>
+      <updated>1422513095049</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Semplice Script per la creazione di un virtualenv">
+      <created>1422563828996</created>
+      <updated>1422563828996</updated>
+    </task>
+    <task id="LOCAL-00013" summary="File requirements creato con pip freeze">
+      <created>1422563867026</created>
+      <updated>1422563867026</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -596,11 +645,11 @@
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33041957" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32342657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32342657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22432025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19335347" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2839879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3013595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -660,10 +709,15 @@
     <MESSAGE value="Flask, SQLAlchemy e WTForms - Qualche pasticcio con l'ORM ... ;)" />
     <MESSAGE value="sqlalchemy.exc.InvalidRequestError: Class &lt;class 'app.models.Acquisto'&gt; does not have a __table__ or __tablename__ specified and does not inherit from an existing table-mapped class." />
     <MESSAGE value="Aggiunta Primary key alla tbl Acquisto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta Primary key alla tbl Acquisto" />
+    <MESSAGE value="Corretta definizione tabella Acquisto" />
+    <MESSAGE value="Semplice Script per la creazione di un virtualenv" />
+    <MESSAGE value="File requirements creato con pip freeze" />
+    <option name="LAST_COMMIT_MESSAGE" value="File requirements creato con pip freeze" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sql/schema.sql">
@@ -776,30 +830,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468" />
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/2fa819e9/c72ea13a-63ac-4181-afda-8d9020684f34/..fornitore">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/2fa819e9/c72ea13a-63ac-4181-afda-8d9020684f34/..acquisto">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/2fa819e9/c72ea13a-63ac-4181-afda-8d9020684f34/..iva">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/public_html/storeR/barcodeMgr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.7078652" vertical-offset="0" max-vertical-offset="360" />
@@ -810,27 +840,6 @@
         <state line="29" column="0" selection-start="953" selection-end="953" vertical-scroll-proportion="-0.10465116" vertical-offset="522" max-vertical-offset="1890" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/iva.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="51" selection-start="245" selection-end="245" vertical-scroll-proportion="0.13333334" vertical-offset="0" max-vertical-offset="540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/dump.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="0" selection-start="25803" selection-end="25803" vertical-scroll-proportion="0.7919075" vertical-offset="5655" max-vertical-offset="6174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="25" selection-start="84" selection-end="84" vertical-scroll-proportion="0.15083799" vertical-offset="0" max-vertical-offset="358" />
@@ -838,147 +847,175 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="107" selection-end="107" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="180">
-          <folding />
+        <state line="4" column="14" selection-start="107" selection-end="107" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="180" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="169" selection-end="169" vertical-scroll-proportion="-2.2592592" vertical-offset="101" max-vertical-offset="504" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="68" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="504" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="6" selection-start="239" selection-end="239" vertical-scroll-proportion="0.48961425" vertical-offset="249" max-vertical-offset="1098" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/db_downgrade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="337" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="468" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/2fa819e9/f98656bd-d3d6-4f71-8054-5bba5d30cb44/..prodotto">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/2fa819e9/f98656bd-d3d6-4f71-8054-5bba5d30cb44/..acquisto">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/db_migrate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="97" selection-end="97" vertical-scroll-proportion="0.22291021" vertical-offset="0" max-vertical-offset="414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/db_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.055727553" vertical-offset="0" max-vertical-offset="342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/db_upgrade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="44" selection-start="322" selection-end="322" vertical-scroll-proportion="0.30083567" vertical-offset="0" max-vertical-offset="359" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/amount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <folding>
+            <marker date="1422556431055" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <folding>
-            <element signature="e#28#58#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="169" selection-end="169" vertical-scroll-proportion="-2.2592592" vertical-offset="101" max-vertical-offset="504">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="68" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="504">
-          <folding>
-            <element signature="e#27#77#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="6" selection-start="239" selection-end="239" vertical-scroll-proportion="0.48961425" vertical-offset="249" max-vertical-offset="1098">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/db_downgrade.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="337">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/2fa819e9/f98656bd-d3d6-4f71-8054-5bba5d30cb44/..prodotto">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/2fa819e9/f98656bd-d3d6-4f71-8054-5bba5d30cb44/..acquisto">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/db_migrate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="97" selection-end="97" vertical-scroll-proportion="0.22291021" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/db_create.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.055727553" vertical-offset="0" max-vertical-offset="342">
-          <folding>
-            <element signature="e#27#61#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/prodotti.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="282" column="0" selection-start="24484" selection-end="24484" vertical-scroll-proportion="1.4594594" vertical-offset="4644" max-vertical-offset="5184">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="14" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.9247649" vertical-offset="299" max-vertical-offset="702">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/db_upgrade.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="322" selection-end="322" vertical-scroll-proportion="0.30083567" vertical-offset="0" max-vertical-offset="359">
-          <folding>
-            <element signature="e#26#60#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="1242">
+        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.4682081" vertical-offset="0" max-vertical-offset="1170">
+        <state line="56" column="40" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0" vertical-offset="621" max-vertical-offset="1188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="14" selection-start="1042" selection-end="1042" vertical-scroll-proportion="1.3457944" vertical-offset="162" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.24930748" vertical-offset="0" max-vertical-offset="361">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask/lib/python3.4/site-packages/wtforms/ext/sqlalchemy/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3402">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask/lib/python3.4/site-packages/wtforms/ext/sqlalchemy/orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5454">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask/lib/python3.4/site-packages/wtforms/ext/sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="56" selection-start="154" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="38" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/prodotti.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="282" column="0" selection-start="24484" selection-end="24484" vertical-scroll-proportion="-16.0" vertical-offset="4644" max-vertical-offset="5184">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/iva.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="51" selection-start="245" selection-end="245" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/dump.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="46" selection-start="15442" selection-end="15442" vertical-scroll-proportion="-6.783784" vertical-offset="5950" max-vertical-offset="6246">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_venv.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="194" selection-end="194" vertical-scroll-proportion="0.48214287" vertical-offset="0" max-vertical-offset="432">
           <folding />
         </state>
       </provider>

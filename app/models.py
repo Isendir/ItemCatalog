@@ -5,12 +5,14 @@ __author__ = 'acherubini'
 from app import db
 
 
-class Acquisto(db.Model):
+class Acquisto(Base):
     __tablename__ = 'acquisto'
-    id = db.Column(db.Integer, primary_key=True),
-    data = db.Column(db.Date, nullable=False),
-    fornitore_id = db.Column(db.ForeignKey('fornitore.id'), nullable=False)
 
+    id = db.Column(db.Integer, primary_key=True)
+    data = db.Column(db.Text, nullable=False)
+    fornitore_id = db.Column(ForeignKey('fornitore.id'), nullable=False)
+
+    fornitore = db.relationship('Fornitore')
 
 class AcquistoDettaglio(db.Model):
     __tablename__ = 'acquistoDettaglio'

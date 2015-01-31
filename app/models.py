@@ -1,60 +1,66 @@
 # coding: utf-8
+from datetime import date
+from sqlalchemy import Column, ForeignKey, Integer, Text, Date
+from sqlalchemy.orm import relationship
+from sqlalchemy.ext.declarative import declarative_base
 
-__author__ = 'acherubini'
 
-from app import db
+Base = declarative_base()
+metadata = Base.metadata
 
+# FIXME: Cambiare la definizione dei dati da TEXT a Unicode
 
-class Acquisto(db.Model):
+class Acquisto(Base):
     __tablename__ = 'acquisto'
 
-    id = db.Column(db.Integer, primary_key=True)
-    data = db.Column(db.Text, nullable=False)
-    fornitore_id = db.Column(db.ForeignKey('fornitore.id'), nullable=False)
+    id = Column(Integer, primary_key=True)
+    data = Column(Date, nullable=False)
+    fornitore_id = Column(ForeignKey('fornitore.id'), nullable=False)
 
-    fornitore = db.relationship('Fornitore')
+    fornitore = relationship('Fornitore')
 
-class AcquistoDettaglio(db.Model):
+
+class AcquistoDettaglio(Base):
     __tablename__ = 'acquistoDettaglio'
 
-    id = db.Column(db.Integer, primary_key=True)
-    acquisto_id = db.Column(db.ForeignKey('acquisto.id'), nullable=False)
-    qta = db.Column(db.Integer, nullable=False)
-    prezzo = db.Column(db.Integer, nullable=False)
-    iva_id = db.Column(db.ForeignKey('iva.id'), nullable=False)
+    id = Column(Integer, primary_key=True)
+    acquisto_id = Column(ForeignKey('acquisto.id'), nullable=False)
+    qta = Column(Integer, nullable=False)
+    prezzo = Column(Integer, nullable=False)
+    iva_id = Column(ForeignKey('iva.id'), nullable=False)
 
-    acquisto = db.relationship('Acquisto')
-    iva = db.relationship('Iva')
+    acquisto = relationship('Acquisto')
+    iva = relationship('Iva')
 
 
-class Categoria(db.Model):
+class Categoria(Base):
     __tablename__ = 'categoria'
 
-    id = db.Column(db.Integer, primary_key=True)
-    nome = db.Column(db.Text)
+    id = Column(Integer, primary_key=True)
+    nome = Column(Text)
 
 
-class Fornitore(db.Model):
+class Fornitore(Base):
     __tablename__ = 'fornitore'
 
-    id = db.Column(db.Integer, primary_key=True)
-    nome = db.Column(db.Text, nullable=False)
+    id = Column(Integer, primary_key=True)
+    nome = Column(Text, nullable=False)
 
 
-class Iva(db.Model):
+class Iva(Base):
     __tablename__ = 'iva'
 
-    id = db.Column(db.Integer, primary_key=True)
-    valore = db.Column(db.Integer, nullable=False)
-    descrizione = db.Column(db.Text, nullable=False)
+    id = Column(Integer, primary_key=True)
+    valore = Column(Integer, nullable=False)
+    descrizione = Column(Text, nullable=False)
 
 
-class Prodotto(db.Model):
+class Prodotto(Base):
     __tablename__ = 'prodotto'
 
-    id = db.Column(db.Integer, primary_key=True)
-    barcode = db.Column(db.Text, nullable=False)
-    descrizione = db.Column(db.Text, nullable=False)
-    categoria = db.Column(db.ForeignKey('categoria.id'))
+    id = Column(Integer, primary_key=True)
+    barcode = Column(Text, nullable=False)
+    descrizione = Column(Text, nullable=False)
+    categoria = Column(ForeignKey('categoria.id'))
 
-    categoria1 = db.relationship('Categoria')
+    categoria1 = relationship('Categoria')

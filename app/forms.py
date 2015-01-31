@@ -1,10 +1,31 @@
 __author__ = 'acherubini'
 
+# Utilizzo WTForms-Alchemy per creare i form come da modello
 
-from flask.ext.wtf import Form
-from wtforms import StringField, BooleanField
-from wtforms.validators import DataRequired
+from app import app
+from flask_sqlalchemy import SQLAlchemy
+from flask_wtf import Form
+from wtforms_alchemy import model_form_factory
+from app.models import Prodotto
+from app.models import Base
+db = SQLAlchemy(app)
+db.Model = Base
 
-class LoginForm(Form):
-    openid = StringField('openid', validators=[DataRequired()])
-    remember_me = BooleanField('remember_me, default = False')
+# Reference https://wtforms-alchemy.readthedocs.org/en/latest/advanced.html
+# The variable db here is a SQLAlchemy object instance from
+# Flask-SQLAlchemy package
+
+BaseModelForm = model_form_factory(Form)
+
+
+class ModelForm(BaseModelForm):
+    @classmethod
+    def get_session(self):
+        return db.session
+
+
+class ProdottoForm(ModelForm):
+    class Meta:
+        model = Prodotto
+
+

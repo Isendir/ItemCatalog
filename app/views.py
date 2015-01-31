@@ -1,7 +1,15 @@
 __author__ = 'acherubini'
+import base64
 from app import app
+from app import db
 from flask import request
 from flask import render_template
+from flask import abort,jsonify,redirect
+from flask import url_for
+from app.forms import ProdottoForm
+from app.models import Prodotto
+
+#app.secret_key= b'e\xe1\xaa,\xf5\xc5\xb3\xa4D\x90\xdej\xf9\xb5\xce\xf8\xe9\x8d\x12F\xa5\xf2%\xe5"P\xd3\x8c\xaf\x1c\x1a\xe4p{\x0f\x90\x16$X\xfdi\xef\x07\xe22\xef\xf8\xceC\x0cc\x00S\xa2\xc2U\x0bJB\xfe\x8a\x86\xcc\x01'
 
 def dump_request_detail(request):
     request_detail="""
@@ -35,9 +43,8 @@ def callme_after_every_response(response):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
-    #user_agent = request.headers.get('User-Agent')
-    #return '<p>Your browser is %s</p>' % user_agent
+    user_agent = request.headers.get('User-Agent')
+    return render_template('index.html', user_agent=user_agent)
 
 
 @app.route('/products')
@@ -55,9 +62,21 @@ def product_edit(product_id):
     return 'Form to edit product #{}.'.format(product_id)
 
 
-@app.route('/products/create/', methods=['GET','POST'])
+@app.route('/products/create/', methods=['GET', 'POST'])
 def product_create():
-    return 'Form to create a new product'
+    """Fornisce il form HTML per creare un nuovo prodotto"""
+    form = ProdottoForm(request.form)
+    if request.method == 'POST' and form.validate():
+        prod = Prodotto()
+        form.populate_obj(prod)
+        db.session.add(prod)
+        db.session.commit()
+        # Success. Send user back to full product list.
+        return redirect(url_for(prodotti_lista))
+    # Qui c'è o il primo caricamento o un errore di validazione
+    return render_template('prodotto/edit.html', form=form)
+
+
 
 
 @app.route('/products/<int:product_id>/delete/',methods=(['DELETE']))

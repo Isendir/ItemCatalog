@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Prodotti {% endblock title %}
+{% block header %} <h1>Lista Prodotti</h1> {% endblock header %}
+{% block main %}
+
+<table class="table table-bordered table-striped">
+    <thead>
+    <td>Id</td>
+    <td>Barcode</td>
+    <td>Descrizione</td>
+    <td>Categoria</td>
+    </thead>
+    <tbody>
+    {% for product in products %}
+        <tr>
+        <td> {{ product.id }}</td>
+        <td>{{ product.barcode }}</td>
+        <td>{{ product.descrizione }}</td>
+        <td>{{ product.categoria }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock main %}

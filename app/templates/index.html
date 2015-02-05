@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block title %} Page Title {% endblock title %}
-{% block main %}
-<h2>User Agent Info:</h2>
-<p>{{ user_agent }}</p>
-{% endblock main %}
+{% block header %}
+<div class="alert alert-success" role="alert">
+    <h1>User Agent Info:</h1> {{ user_agent }}
+    </div>
+{% endblock header %}
